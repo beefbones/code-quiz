@@ -1,7 +1,7 @@
 # code-quiz
 
 ## Description
-This website is a code quiz designed to test the users knowledge on simple coding concepts. The user can select an answer, and if they get it wrong, it will deduct the time and score by a factor of 10. Afterwards, they will be able to enter their initials to save their highscores.
+This website is a code quiz designed to test the users knowledge on simple coding concepts. The user can select an answer, and if they get it wrong, it will deduct the time and score by a factor of 15. Afterwards, they will be able to enter their initials to save their highscores.
 
 
 ## Usage

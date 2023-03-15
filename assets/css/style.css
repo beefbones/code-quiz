@@ -1,96 +1,94 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+#wrap {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  border: 1px solid green;
 }
-body {
-    background-color:cornsilk;
+#startTime,
+#Submit,
+#goBack,
+#clear {
+  background-color: red;
+  font-size: 25px;
+  color: white;
 }
-.header {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 50px;
-    padding: 20px 25px;
+#startTime {
+  margin-right: 500px;
 }
-
-.view-score {
-    cursor: pointer;
-    background-color: cornsilk;
-    border-radius: 5px;
-    box-shadow: 0 0 0 8px cornsilk;
+#goBack {
+  position: relative;
+  top: 30%;
+  left: 55%;
+  width: auto;
+  margin: 30px
 }
-
-.opening {
-    margin: 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#clear {
+  position: relative;
+  top: 30%;
+  right: 5%;
+  text-align: center;
 }
-
-.container {
-    width: 600px;
-    height: 330px;
-    text-align: center;
+#questionsDiv,
+#createDiv {
+  margin: 20px;
 }
-
-.title {
-    margin: 15px;
-    font-size: 30px;
-
+#time {
+  float: right;
 }
-
-.text {
-    margin: 10px;
-    font-size: 20px;
-    line-height: 1.5;
+textarea {
+  width: 89%;
+  margin: 18px;
 }
-
-.btn {
-    font-size: 26px;
-    font-family: 'Courier New', Courier, monospace;
-    border-radius: 7px;
-    color: #fff;
-    background-color:darkslategray;
-    border: none;
-    padding: 5px;
-    margin: 10px;
-    cursor: pointer;   
+label {
+  margin-right: 9px;
 }
-
-.btn:hover {
-    background-color: rgb(212, 16, 252);
+input {
+  margin-bottom: 24px;
+  width: 49%;
+  border: 1px solid lightgray;
+}
+h1 {
+  text-align: center;
+}
+li {
+  background-color: green;
+  margin-top: 10px;
+  padding: 5px 15px;
+  width: 80%;
+  font-size: 18px;
+  color: white;
 }
 
-.btn-start {
-    width: 200px;
+@media screen and (max-width: 786px) {
+  body {
+    max-width: 786px;
+  }
+  #wrap {
+    left: 21%;
+    position: absolute;
+  }
+  a {
+    margin-left: 22%;
+  }
+  #goBack {
+    left: 50%;
+    position: relative;
+  }
+  #clear {
+    right: 10%;
+    position: relative;
+  }
 }
 
-.btn-answer {
-    width: 350px;
-    text-align: left;
-}
-
-.divider {
-    visibility: hidden;
-    border: 2px solid rgba(128, 128, 128, 0.5);
-    width: 800px;
-    margin: 0 auto;
-}
-
-.result {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-.check-result {
-    font-size: 28px;
-    font-style: italic;
-    color: rgba(128, 128, 128, 1);
-    letter-spacing: 1px;
-}
-
-.list {
-    list-style-type: decimal;
+@media screen and (max-width: 640px) {
+  body {
+    min-width: 640px;
+  }
+  #wrap {
+    left: 10%;
+    position: absolute;
+  }
+  a {
+    margin-left: 10%;
+  }
 }
